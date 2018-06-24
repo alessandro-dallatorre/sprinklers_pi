@@ -7,7 +7,7 @@
 #ifndef _SETTINGS_h
 #define _SETTINGS_h
 #define MAX_SCHEDULES 10
-#define NUM_ZONES 6
+#define NUM_ZONES 2
 #include <inttypes.h>
 #include <string.h>
 
