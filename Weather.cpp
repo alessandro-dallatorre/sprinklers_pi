@@ -201,7 +201,7 @@ Weather::ReturnVals Weather::GetVals(const char * key, uint32_t zip, const char 
 		char getstring[255];
 		trace(F("Connected\n"));
 		if (usePws)
-			snprintf(getstring, sizeof(getstring), "GET http://%s/api/%s/yesterday/conditions/q/pws:%s.json HTTP/1.1\r\n",m_wundergroundAPIHost, key, pws);
+			snprintf(getstring, sizeof(getstring), "GET http://%s/api/%s/yesterday/conditions/q/LU/capellen.json HTTP/1.1\r\n",m_wundergroundAPIHost, key);
 		else
 			snprintf(getstring, sizeof(getstring), "GET http://%s/api/%s/yesterday/conditions/q/%ld.json HTTP/1.1\r\n",m_wundergroundAPIHost, key, (long) zip);
 
